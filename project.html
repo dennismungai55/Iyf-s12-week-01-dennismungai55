@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my web development projects and learning journey.">
+    <title>My Projects | My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background-color: #12345a;
+            color: white;
+            padding: 24px 16px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0b223d;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            color: #12345a;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>A showcase of my learning and web development journey</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Projects Portfolio</h2>
+            <p>
+                Here are three projects I am working on as I develop my
+                HTML, CSS, and web development skills.
+            </p>
+        </section>
+
+        <section class="project-container" aria-label="My projects">
+
+            <article class="project-card">
+                <img
+                    src="images/project1.jpg"
+                    alt="Screenshot or illustration of my personal website"
+                    loading="lazy"
+                >
+                <div class="project-content">
+                    <h3>Project 1: Personal Website</h3>
+                    <p>
+                        A personal website built with HTML to introduce
+                        myself, share my interests, and present my skills.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img
+                    src="images/project2.jpg"
+                    alt="Screenshot or illustration of a responsive web page"
+                    loading="lazy"
+                >
+                <div class="project-content">
+                    <h3>Project 2: Responsive Web Page</h3>
+                    <p>
+                        A web page styled with CSS that adapts to different
+                        screen sizes, including phones, tablets, and computers.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img
+                    src="images/project3.jpg"
+                    alt="Screenshot or illustration of a student project"
+                    loading="lazy"
+                >
+                <div class="project-content">
+                    <h3>Project 3: Student Project</h3>
+                    <p>
+                        A placeholder for a future project where I will
+                        apply my coding skills to solve a practical problem.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio. Built while learning web development.</p>
+    </footer>
+</body>
+</html>
